@@ -1,0 +1,105 @@
+{
+  "title": "IFL City Challenge",
+  "hook": "Master professional English speaking challenges",
+  "game_overview": "Navigate high-stakes urban English conversations, solve timed grammar challenges, and advance your career in the city.",
+  "artstyle": "photorealistic",
+  "genre": "trivia",
+  "winning_condition": "Successfully complete all 3 scenario chapters with a passing score of at least 70% accuracy.",
+  "losing_condition": "Fail to answer correctly before the scenario timer expires across 3 consecutive strikes.",
+  "player_mode": "single_player",
+  "supported_orientations": [
+    "landscape"
+  ],
+  "input_methods": [
+    "touch",
+    "mouse",
+    "keyboard"
+  ],
+  "score_options": {
+    "score_type": "points",
+    "score_order": "higher_is_better"
+  },
+  "low_end_device_support": true,
+  "mobile_playable": true,
+  "tv_playable": false,
+  "language": [
+    "en"
+  ],
+  "content_descriptors": [],
+  "controls": [
+    {
+      "input": "Left Mouse Click / Tap",
+      "action": "Select dialogue options, interact with grammar tokens, and submit responses."
+    },
+    {
+      "input": "Keyboard Keys 1-4",
+      "action": "Quick-select multiple-choice dialogue responses."
+    },
+    {
+      "input": "Keyboard Enter / Space",
+      "action": "Confirm selected answer or advance conversation."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design Pillars",
+      "content": "1. Authentic Professional Immersion: Recreate realistic modern corporate, banking, and cafe environments with photorealistic visual fidelity. 2. Low-Stress High-Engagement Learning: Timed 30-second rapid-fire questions foster instinctual language recall without paralyzing the learner. 3. Immediate Constructive Feedback: Clear audio-visual rewards for correct grammar and helpful interactive retry prompts for mistakes.",
+      "summary": "Core pedagogical and experiential design values."
+    },
+    {
+      "title": "Core Loop",
+      "content": "The player chooses or enters an urban scenario (Specialty Cafe -> Bank Consultation -> Corporate Networking Mixer). An NPC speaks in natural English dialogue posing a situation. A 30-second interactive challenge overlay appears focusing on Lesson 3 (Months of the Year) and Lesson 4 (Possessive Adjectives & Pronouns: my, your, his, her, our, their, mine, yours). Player submits their choice via multiple choice or slot-filling. Immediate feedback displays grammar notes, awards points/reputation, and unlocks the next conversational branch.",
+      "summary": "Primary cycle of scenario progression, grammar challenge, and evaluation."
+    },
+    {
+      "title": "Core Mechanics",
+      "content": "1. Rapid-Fire 30s Countdown: A sleek circular radial timer counts down from 30 seconds; faster answers award bonus speed points. 2. Grammar Slot Assembler & Multiple Choice: Dynamic fill-in-the-blank tokens (possessives & calendar months) and situational dialog trees. 3. Professional Confidence Meter: Correct answers boost confidence and score multiplier; errors pause time and present grammar coaching cards. 4. Scenario Branching: Three distinct workplace & daily life hubs with varied conversational stakes.",
+      "summary": "Interactive language test systems and scoring."
+    },
+    {
+      "title": "Movement & Scrolling Alignment",
+      "content": "Scrolling Axis: Static Screen / Bounded Arena presentation with horizontal smooth slide scene transitions. Asset Orientation: Characters are framed in portrait/half-body view facing slightly towards center stage to directly address the player. Movement Physics: Kinetic UI animations with spring easing for dialogue cards and question pop-ups. Camera Behavior: Locked cinematic focal framing on the active speaker and conversational environment.",
+      "summary": "Fixed camera visual novel and interactive dialogue framing."
+    },
+    {
+      "title": "Visual Hierarchy & Layering",
+      "content": "Layer Separation: Background layer features softly blurred photorealistic urban interiors (coffee shop, glass banking lobby, evening mixer terrace). Playfield/Character layer hosts crisp, high-contrast photorealistic human character sprites. HUD/Interactive layer uses frosted glassmorphic response cards, high-contrast gold/teal action buttons, and clear typography (Inter / Roboto) for optimal readability on all screen sizes.",
+      "summary": "Clean modern corporate aesthetic and distinct UI layering."
+    },
+    {
+      "title": "Characters & Enemies",
+      "content": "1. Barista Elena: Friendly, articulate specialty cafe barista asking about seasonal drink schedules and loyalty card ownership. 2. Financial Consultant David: Sharp, professional bank advisor discussing fiscal quarterly appointments and account documentation. 3. Senior Associate Chloe: Polished marketing director at the downtown networking mixer discussing team projects and collaborative timelines.",
+      "summary": "Key interactive NPCs across scenarios."
+    },
+    {
+      "title": "Fairness Tools",
+      "content": "1. Grammar Hint Tooltip: Learners can hover or tap a lightbulb icon to view a quick reference rule for possessive pronouns. 2. Audio Pronunciation Button: Tap to replay spoken question prompts. 3. Second Chance Option: If an error is made, a gentle hint highlights the grammar rule before a 50% score retry.",
+      "summary": "Scaffolding tools for language learners."
+    },
+    {
+      "title": "Juice & Game Feel",
+      "content": "Anticipation Juice: Soft glowing button hover states and ticking sound effects during the final 5 seconds of the countdown. State Change Juice: Smooth slide-in of dialogue cards and green pulse outline on correct choices. Impact Juice: Satisfying chime on correct submission with floating score numbers and celebratory dialogue animation.",
+      "summary": "Polished audio-visual feedback mechanisms."
+    },
+    {
+      "title": "Social Mechanics & Audience",
+      "content": "Designed specifically for adult learners (ages 18-44) practicing practical everyday and workplace English. Features end-of-session evaluation report cards with CEFR-aligned performance grades and exportable achievement summaries.",
+      "summary": "Adult ESL and professional language learners."
+    },
+    {
+      "title": "Accessibility",
+      "content": "Full keyboard navigation (1-4 keys for selection, Enter to submit), high-contrast text subtitles, customizable text sizing, and optional timer pause mode for assisted learning.",
+      "summary": "Inclusive interface features."
+    },
+    {
+      "title": "Structural Integrity",
+      "content": "Flow: Title Screen & Scenario Selection -> Scenario Narrative Dialogue -> Timed Grammar Challenge -> Immediate Explanation & Feedback -> Scenario Summary & Score Review -> Next Chapter -> Graduation Results Screen.",
+      "summary": "Scene management and state flow."
+    },
+    {
+      "title": "Virtual Touch Controls Implementation",
+      "content": "Render large, touch-friendly answer cards (minimum 48px height) with touch-none CSS to prevent accidental viewport drag. Use pointer-events-auto strictly on button elements to keep UI responsive on mobile devices.",
+      "summary": "Mobile responsive touch overlay and tap targets."
+    }
+  ]
+}
